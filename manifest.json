@@ -1,7 +1,7 @@
 {
   "name": "Supreme Size Selector",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.2",
   "description": "Auto select sizing for Supreme Webstore",
   "icons": {"16": "img38.png", "48": "img48.png", "128": "img128.png"},
   "content_scripts": [{
@@ -17,5 +17,13 @@
     "*://*.supremenewyork.com/*"
 	], 
 	"options_page": "view/options.html",
-	 "web_accessible_resources": ["view/jquery.min.map"]
+	 "web_accessible_resources": ["view/jquery.min.map"],
+	
+	"browser_action": {
+    "default_icon": {
+        "16": "img38.png",
+        "48": "img48.png"
+    },
+    "default_popup": "view/options.html"
+}
 }
