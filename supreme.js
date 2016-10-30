@@ -8,7 +8,6 @@ $(function() {
 					$("#size option").each(function(i) {
 						if($(this).text() == res.size) {
 							$('#size').prop('selectedIndex', i);
-							$('[name="commit"]').one("click");
 						}
 					});	
 				}
